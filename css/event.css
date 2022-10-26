@@ -1,0 +1,183 @@
+section {
+            width: 100%;
+            height:1000px;
+        }
+           
+           
+        /* Styling the three events section */
+        section .events {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+           
+        /* Styling the links of 
+        the events section */
+        section .events ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+           
+        /* Styling the lists of the event section */
+        section .events ul li {
+            list-style: none;
+            background: #ececec;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+        }
+           
+        /* Styling the time class of events section */
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #2196f3;
+            box-sizing: border-box;
+            width: 15%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+           
+        /* Styling the hover effect
+            of events section */
+        section .events ul li:hover .time {
+            background: #e91e63;
+        }
+           
+        /* Styling the header of time 
+            class of events section */
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 60px;
+            line-height: 30px;
+        }
+           
+        /* Styling the texts of time 
+        class of events section */
+        section .events ul li .time h2 span {
+            font-size: 30px;
+        }
+           
+        /* Styling the details 
+        class of events section */
+        section .events ul li .details {
+            padding: 20px;
+            background:#ececec;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+            overflow: hidden;
+        }
+           
+        /* Styling the header of the 
+        details class of events section */
+        section .events ul li .details h3 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 22px;
+        }
+           
+        /* Styling the lists of details 
+        class of events section */
+        section .events ul li .details p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 16px;
+            text-align: justify;
+            
+            
+        }
+           
+        /* Styling the links of details
+        class of events section */
+
+ .main-title {
+  text-transform: uppercase;
+  margin: 15px 30px 80px;
+  border: 2px solid black;
+  border-radius:5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  width: fit-content;
+  position: absolute;
+  z-index: 1;
+  transition: var(--main-transition);
+  right: 50px;
+  color: #2196f3;
+  }
+.main-title::before,
+.main-title::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: var(--main-color);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-title::before {
+  left: -30px;
+}
+.main-title::after {
+  right: -30px;
+}
+.main-title:hover::before {
+  z-index: -1;
+  animation: left-move 0.5s linear forwards;
+}
+.main-title:hover::after {
+  z-index: -1;
+  animation: right-move 0.5s linear forwards;
+}
+.main-title:hover {
+  color: white;
+  border: 2px solid white;
+  transition-delay: 0.5s;
+}
+    
+    @keyframes left-move {
+  50% {
+    left: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    left: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+@keyframes right-move {
+  50% {
+    right: 0;
+    width: 12px;
+    height: 12px;
+  }
+  100% {
+    right: 0;
+    border-radius: 0;
+    width: 50%;
+    height: 100%;
+  }
+}
+
